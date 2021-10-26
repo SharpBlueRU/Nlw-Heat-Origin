@@ -12,15 +12,21 @@
       -webkit-font-smoothing: antialiased;
   }
 
+  @media (min-width: 720px) {
+	/* estilos versão tablet */
+ } 
+
+
   body {
       display: grid;
       place-items: center;
   }
 
   main {
-      background: url(images/background.svg);
-      width: 375px;
-      height: 812px;
+      background: url(images/background.svg) no-repeat center/cover;
+      width: 100vw;
+      min-height: 812px;
+      height: 100vh;
   }
 
   .container{
@@ -88,3 +94,10 @@
 
       justify-content: center;
   }
+
+  @media (min-width: 960px) { 
+     main {
+        background: #121212 url(images/background-desktop.png) no-repeat center/cover;
+     }
+}
+
